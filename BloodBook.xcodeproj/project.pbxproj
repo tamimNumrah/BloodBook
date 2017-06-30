@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D80619701F0578BA00943C7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D806196F1F0578BA00943C7B /* AppDelegate.swift */; };
+		D80619751F0578BA00943C7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80619731F0578BA00943C7B /* Main.storyboard */; };
+		D80619781F0578BA00943C7B /* BloodBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D80619761F0578BA00943C7B /* BloodBook.xcdatamodeld */; };
+		D806197A1F0578BA00943C7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80619791F0578BA00943C7B /* Assets.xcassets */; };
+		D806197D1F0578BA00943C7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D806197B1F0578BA00943C7B /* LaunchScreen.storyboard */; };
+		D80619851F057E7400943C7B /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80619841F057E7400943C7B /* ContactsListViewController.swift */; };
+		D80619871F057ED200943C7B /* ContactListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80619861F057ED200943C7B /* ContactListCellTableViewCell.swift */; };
+		D8CD17561F06A9C900E6D1B5 /* BloodBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD17551F06A9C900E6D1B5 /* BloodBookViewController.swift */; };
+		D8CD17591F06A9FC00E6D1B5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD17581F06A9FC00E6D1B5 /* SettingsViewController.swift */; };
+		D8CD175C1F06AC3700E6D1B5 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD175B1F06AC3700E6D1B5 /* SettingsTableViewCell.swift */; };
+		D8CD175E1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD175D1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D806196C1F0578BA00943C7B /* BloodBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloodBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D806196F1F0578BA00943C7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D80619741F0578BA00943C7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D80619771F0578BA00943C7B /* BloodBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BloodBook.xcdatamodel; sourceTree = "<group>"; };
+		D80619791F0578BA00943C7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D806197C1F0578BA00943C7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D806197E1F0578BA00943C7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D80619841F057E7400943C7B /* ContactsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
+		D80619861F057ED200943C7B /* ContactListCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListCellTableViewCell.swift; sourceTree = "<group>"; };
+		D8CD17551F06A9C900E6D1B5 /* BloodBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodBookViewController.swift; sourceTree = "<group>"; };
+		D8CD17581F06A9FC00E6D1B5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D8CD175B1F06AC3700E6D1B5 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		D8CD175D1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodBookTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D80619691F0578BA00943C7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D80619631F0578BA00943C7B = {
+			isa = PBXGroup;
+			children = (
+				D806196E1F0578BA00943C7B /* BloodBook */,
+				D806196D1F0578BA00943C7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D806196D1F0578BA00943C7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D806196C1F0578BA00943C7B /* BloodBook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D806196E1F0578BA00943C7B /* BloodBook */ = {
+			isa = PBXGroup;
+			children = (
+				D806196F1F0578BA00943C7B /* AppDelegate.swift */,
+				D8CD175A1F06AA0300E6D1B5 /* ViewControllers */,
+				D8CD17571F06A9D100E6D1B5 /* CustomCells */,
+				D80619731F0578BA00943C7B /* Main.storyboard */,
+				D80619791F0578BA00943C7B /* Assets.xcassets */,
+				D806197B1F0578BA00943C7B /* LaunchScreen.storyboard */,
+				D806197E1F0578BA00943C7B /* Info.plist */,
+				D80619761F0578BA00943C7B /* BloodBook.xcdatamodeld */,
+			);
+			path = BloodBook;
+			sourceTree = "<group>";
+		};
+		D8CD17571F06A9D100E6D1B5 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				D80619861F057ED200943C7B /* ContactListCellTableViewCell.swift */,
+				D8CD175B1F06AC3700E6D1B5 /* SettingsTableViewCell.swift */,
+				D8CD175D1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift */,
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
+		D8CD175A1F06AA0300E6D1B5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D80619841F057E7400943C7B /* ContactsListViewController.swift */,
+				D8CD17551F06A9C900E6D1B5 /* BloodBookViewController.swift */,
+				D8CD17581F06A9FC00E6D1B5 /* SettingsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D806196B1F0578BA00943C7B /* BloodBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D80619811F0578BA00943C7B /* Build configuration list for PBXNativeTarget "BloodBook" */;
+			buildPhases = (
+				D80619681F0578BA00943C7B /* Sources */,
+				D80619691F0578BA00943C7B /* Frameworks */,
+				D806196A1F0578BA00943C7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BloodBook;
+			productName = BloodBook;
+			productReference = D806196C1F0578BA00943C7B /* BloodBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D80619641F0578BA00943C7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Tamim Ibn Aman";
+				TargetAttributes = {
+					D806196B1F0578BA00943C7B = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = C2ULP5XCLB;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D80619671F0578BA00943C7B /* Build configuration list for PBXProject "BloodBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D80619631F0578BA00943C7B;
+			productRefGroup = D806196D1F0578BA00943C7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D806196B1F0578BA00943C7B /* BloodBook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D806196A1F0578BA00943C7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D806197D1F0578BA00943C7B /* LaunchScreen.storyboard in Resources */,
+				D806197A1F0578BA00943C7B /* Assets.xcassets in Resources */,
+				D80619751F0578BA00943C7B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D80619681F0578BA00943C7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80619871F057ED200943C7B /* ContactListCellTableViewCell.swift in Sources */,
+				D80619851F057E7400943C7B /* ContactsListViewController.swift in Sources */,
+				D8CD17561F06A9C900E6D1B5 /* BloodBookViewController.swift in Sources */,
+				D80619701F0578BA00943C7B /* AppDelegate.swift in Sources */,
+				D8CD175C1F06AC3700E6D1B5 /* SettingsTableViewCell.swift in Sources */,
+				D8CD175E1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift in Sources */,
+				D80619781F0578BA00943C7B /* BloodBook.xcdatamodeld in Sources */,
+				D8CD17591F06A9FC00E6D1B5 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D80619731F0578BA00943C7B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D80619741F0578BA00943C7B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D806197B1F0578BA00943C7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D806197C1F0578BA00943C7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D806197F1F0578BA00943C7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D80619801F0578BA00943C7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D80619821F0578BA00943C7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C2ULP5XCLB;
+				INFOPLIST_FILE = BloodBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tamim.BloodBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D80619831F0578BA00943C7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C2ULP5XCLB;
+				INFOPLIST_FILE = BloodBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tamim.BloodBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D80619671F0578BA00943C7B /* Build configuration list for PBXProject "BloodBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D806197F1F0578BA00943C7B /* Debug */,
+				D80619801F0578BA00943C7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D80619811F0578BA00943C7B /* Build configuration list for PBXNativeTarget "BloodBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80619821F0578BA00943C7B /* Debug */,
+				D80619831F0578BA00943C7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D80619761F0578BA00943C7B /* BloodBook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D80619771F0578BA00943C7B /* BloodBook.xcdatamodel */,
+			);
+			currentVersion = D80619771F0578BA00943C7B /* BloodBook.xcdatamodel */;
+			path = BloodBook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D80619641F0578BA00943C7B /* Project object */;
+}
