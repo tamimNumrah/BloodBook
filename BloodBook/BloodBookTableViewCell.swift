@@ -10,12 +10,12 @@ import UIKit
 
 class BloodBookTableViewCell: UITableViewCell {
 
-    @IBOutlet var ContactImage: UIImageView!
-    @IBOutlet var firstName: UILabel!
-    @IBOutlet var lastName: UILabel!
-    @IBOutlet var PhoneNumber: UILabel!
-    @IBOutlet var dialButton: UIButton!
-    @IBOutlet var smsButton: UIButton!
+    @IBOutlet var ContactImage: UIImageView?
+    @IBOutlet var firstName: UILabel?
+    @IBOutlet var lastName: UILabel?
+    @IBOutlet var PhoneNumber: UILabel?
+    @IBOutlet var dialButton: UIButton?
+    @IBOutlet var smsButton: UIButton?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,8 +29,16 @@ class BloodBookTableViewCell: UITableViewCell {
     }
     
     @IBAction func dialButtonPressed(_ sender: Any) {
+        var telNumber: String = "tel://"
+        telNumber.append((PhoneNumber?.text)!)
+        let url:URL = URL.init(string: telNumber)!
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
 
     @IBAction func smsButtonPressed(_ sender: Any) {
+        var telNumber: String = "sms:"
+        telNumber.append((PhoneNumber?.text)!)
+        let url:URL = URL.init(string: telNumber)!
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
 }
