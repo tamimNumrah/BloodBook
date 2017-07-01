@@ -7,25 +7,56 @@
 //
 
 import UIKit
+import Contacts
 
 class ContactsListViewController: UIViewController {
     @IBOutlet var contactsNavBar: UINavigationBar!
     @IBOutlet weak var tableView: UITableView!
+    var indicator = UIActivityIndicatorView()
     let contactListCellReuseIdentifier = "ContactListCell"
+    var contacts:[CNContact] = [CNContact]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityIndicator()
+        contacts = DeviceContacts.shared.contacts
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func activityIndicator() {
+        indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        indicator.center = self.view.center
+        self.view.addSubview(indicator)
+    }
+    func showActivityIndicator() {
+        if !indicator.isAnimating{
+            print("Activity Indicator in ContactsViewController Showing")
+            tableView.isScrollEnabled = false
+            tableView.allowsSelection = false
+            indicator.startAnimating()
+            indicator.backgroundColor = UIColor.white
+        }
+    }
+    
+    func hideActivityIndicator() {
+        if indicator.isAnimating{
+            print("Activity Indicator in ContactsViewController hiding")
+            tableView.isScrollEnabled = true
+            tableView.allowsSelection = true
+            indicator.stopAnimating()
+            indicator.hidesWhenStopped = true
+        }
+    }
 
 
 }
 extension ContactsListViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return contacts.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: ContactListCellTableViewCell
@@ -34,7 +65,8 @@ extension ContactsListViewController: UITableViewDelegate, UITableViewDataSource
         }else{
             cell = ContactListCellTableViewCell(style: .default, reuseIdentifier: contactListCellReuseIdentifier)
         }
-        cell.ContactName?.text = "This is Test"
+        let contactName:String? = ("\(contacts[indexPath.row].givenName) \(contacts[indexPath.row].familyName)")
+        cell.ContactName?.text = contactName
         return cell;
     }
 }

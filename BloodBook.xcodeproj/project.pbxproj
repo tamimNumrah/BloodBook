@@ -18,6 +18,7 @@
 		D8CD17591F06A9FC00E6D1B5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD17581F06A9FC00E6D1B5 /* SettingsViewController.swift */; };
 		D8CD175C1F06AC3700E6D1B5 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD175B1F06AC3700E6D1B5 /* SettingsTableViewCell.swift */; };
 		D8CD175E1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD175D1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift */; };
+		D8E0317A1F07F76F00B66DDF /* DeviceContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E031791F07F76F00B66DDF /* DeviceContacts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		D8CD17581F06A9FC00E6D1B5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D8CD175B1F06AC3700E6D1B5 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		D8CD175D1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodBookTableViewCell.swift; sourceTree = "<group>"; };
+		D8E031791F07F76F00B66DDF /* DeviceContacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceContacts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				D806196F1F0578BA00943C7B /* AppDelegate.swift */,
+				D8E031791F07F76F00B66DDF /* DeviceContacts.swift */,
 				D8CD175A1F06AA0300E6D1B5 /* ViewControllers */,
 				D8CD17571F06A9D100E6D1B5 /* CustomCells */,
 				D80619731F0578BA00943C7B /* Main.storyboard */,
@@ -175,6 +178,7 @@
 				D80619851F057E7400943C7B /* ContactsListViewController.swift in Sources */,
 				D8CD17561F06A9C900E6D1B5 /* BloodBookViewController.swift in Sources */,
 				D80619701F0578BA00943C7B /* AppDelegate.swift in Sources */,
+				D8E0317A1F07F76F00B66DDF /* DeviceContacts.swift in Sources */,
 				D8CD175C1F06AC3700E6D1B5 /* SettingsTableViewCell.swift in Sources */,
 				D8CD175E1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift in Sources */,
 				D80619781F0578BA00943C7B /* BloodBook.xcdatamodeld in Sources */,

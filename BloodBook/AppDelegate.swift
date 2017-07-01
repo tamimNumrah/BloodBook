@@ -8,15 +8,27 @@
 
 import UIKit
 import CoreData
+import Contacts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.window?.tintColor = UIColor.red
+        /*
+        requestForContactAccess(completionHandler: {
+            accessGranted in
+            if(accessGranted){
+                print("Contact Access Granted")
+            }else {
+                print("Contact Access Denied")
+            }
+        })*/
+        
+        initializeSingletons()
+        
         // Override point for customization after application launch.
         return true
     }
@@ -51,6 +63,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return UIApplication.shared.delegate as! AppDelegate
     }
     
+    func initializeSingletons() -> Void{
+        DeviceContacts.shared.loadContacts()
+    }
     
     func showMessage(message: String) {
         let alertController = UIAlertController(title: "Contacts", message: message, preferredStyle:.alert)
@@ -65,6 +80,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         });
         
     }
+    // MARK: - Contacts
+    func requestForContactAccess(completionHandler: @escaping(_ accessGranted: Bool) -> ()) {
+        let authorizationStatus = CNContactStore.authorizationStatus(for: CNEntityType.contacts)
+        
+        switch authorizationStatus {
+        case .authorized:
+            completionHandler(true)
+            
+        case .denied, .notDetermined:
+           DeviceContacts.shared.contactStore.requestAccess(for: CNEntityType.contacts, completionHandler: { (access, accessError) -> Void in
+                if access {
+                    completionHandler(access)
+                }
+                else {
+                    if authorizationStatus == CNAuthorizationStatus.denied {
+                        DispatchQueue.main.async(execute: { () -> Void in
+                            let message = "\(accessError!.localizedDescription)\n\nPlease allow the app to access your contacts through the Settings."
+                            self.showMessage(message: message)
+                        })
+                    }
+                }
+            })
+            
+        default:
+            completionHandler(false)
+        }
+    }
+
 
 
     // MARK: - Core Data stack
