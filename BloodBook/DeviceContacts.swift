@@ -25,7 +25,7 @@ final class DeviceContacts{
             self.isContactsFetching = true;
             self.contacts = [CNContact]()
             if(accessGranted){
-                let keys = [CNContactFormatter.descriptorForRequiredKeys(for: .fullName)]
+                let keys:[CNKeyDescriptor] = [CNContactFormatter.descriptorForRequiredKeys(for: .fullName), CNContactPhoneNumbersKey as CNKeyDescriptor, CNContactImageDataAvailableKey as CNKeyDescriptor]
                 let request = CNContactFetchRequest(keysToFetch: keys)
                 do {
                     try self.contactStore.enumerateContacts(with: request) {

@@ -19,6 +19,9 @@
 		D8CD175C1F06AC3700E6D1B5 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD175B1F06AC3700E6D1B5 /* SettingsTableViewCell.swift */; };
 		D8CD175E1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD175D1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift */; };
 		D8E0317A1F07F76F00B66DDF /* DeviceContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E031791F07F76F00B66DDF /* DeviceContacts.swift */; };
+		D8E73B321F0959AE00727E01 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E73B311F0959AE00727E01 /* AddContactViewController.swift */; };
+		D8F19D0F1F0AA0A50044A22C /* FormInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F19D0E1F0AA0A50044A22C /* FormInputTableViewCell.swift */; };
+		D8F19D111F0ACC7F0044A22C /* AddBloodGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F19D101F0ACC7F0044A22C /* AddBloodGroupTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		D8CD175B1F06AC3700E6D1B5 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		D8CD175D1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodBookTableViewCell.swift; sourceTree = "<group>"; };
 		D8E031791F07F76F00B66DDF /* DeviceContacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceContacts.swift; sourceTree = "<group>"; };
+		D8E73B311F0959AE00727E01 /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		D8F19D0E1F0AA0A50044A22C /* FormInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormInputTableViewCell.swift; sourceTree = "<group>"; };
+		D8F19D101F0ACC7F0044A22C /* AddBloodGroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBloodGroupTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,8 @@
 				D80619861F057ED200943C7B /* ContactListCellTableViewCell.swift */,
 				D8CD175B1F06AC3700E6D1B5 /* SettingsTableViewCell.swift */,
 				D8CD175D1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift */,
+				D8F19D0E1F0AA0A50044A22C /* FormInputTableViewCell.swift */,
+				D8F19D101F0ACC7F0044A22C /* AddBloodGroupTableViewCell.swift */,
 			);
 			name = CustomCells;
 			sourceTree = "<group>";
@@ -97,6 +105,7 @@
 				D80619841F057E7400943C7B /* ContactsListViewController.swift */,
 				D8CD17551F06A9C900E6D1B5 /* BloodBookViewController.swift */,
 				D8CD17581F06A9FC00E6D1B5 /* SettingsViewController.swift */,
+				D8E73B311F0959AE00727E01 /* AddContactViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -178,9 +187,12 @@
 				D80619851F057E7400943C7B /* ContactsListViewController.swift in Sources */,
 				D8CD17561F06A9C900E6D1B5 /* BloodBookViewController.swift in Sources */,
 				D80619701F0578BA00943C7B /* AppDelegate.swift in Sources */,
+				D8F19D111F0ACC7F0044A22C /* AddBloodGroupTableViewCell.swift in Sources */,
 				D8E0317A1F07F76F00B66DDF /* DeviceContacts.swift in Sources */,
+				D8E73B321F0959AE00727E01 /* AddContactViewController.swift in Sources */,
 				D8CD175C1F06AC3700E6D1B5 /* SettingsTableViewCell.swift in Sources */,
 				D8CD175E1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift in Sources */,
+				D8F19D0F1F0AA0A50044A22C /* FormInputTableViewCell.swift in Sources */,
 				D80619781F0578BA00943C7B /* BloodBook.xcdatamodeld in Sources */,
 				D8CD17591F06A9FC00E6D1B5 /* SettingsViewController.swift in Sources */,
 			);
@@ -311,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tamim.BloodBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,7 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tamim.BloodBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
