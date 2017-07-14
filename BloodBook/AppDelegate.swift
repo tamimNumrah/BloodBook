@@ -9,24 +9,17 @@
 import UIKit
 import CoreData
 import Contacts
-
+import CocoaLumberjack
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        DDLog.add(DDTTYLogger.sharedInstance) // TTY = Xcode console
+        DDLog.add(DDASLLogger.sharedInstance) // ASL = Apple System Logs
+        DDLogInfo("DDLog Setup Done")
         self.window?.tintColor = UIColor.red
-        /*
-        requestForContactAccess(completionHandler: {
-            accessGranted in
-            if(accessGranted){
-                print("Contact Access Granted")
-            }else {
-                print("Contact Access Denied")
-            }
-        })*/
-        
         initializeSingletons()
         
         // Override point for customization after application launch.

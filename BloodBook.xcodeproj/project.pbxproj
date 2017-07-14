@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D78E75CA6D1F5B85A5140CD /* Pods_BloodBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41612174365D6DA480A4563B /* Pods_BloodBook.framework */; };
 		D80619701F0578BA00943C7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D806196F1F0578BA00943C7B /* AppDelegate.swift */; };
 		D80619751F0578BA00943C7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80619731F0578BA00943C7B /* Main.storyboard */; };
 		D80619781F0578BA00943C7B /* BloodBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D80619761F0578BA00943C7B /* BloodBook.xcdatamodeld */; };
@@ -14,17 +15,38 @@
 		D806197D1F0578BA00943C7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D806197B1F0578BA00943C7B /* LaunchScreen.storyboard */; };
 		D80619851F057E7400943C7B /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80619841F057E7400943C7B /* ContactsListViewController.swift */; };
 		D80619871F057ED200943C7B /* ContactListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80619861F057ED200943C7B /* ContactListCellTableViewCell.swift */; };
+		D843F81C1F10C520004B0604 /* NameInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D843F81B1F10C520004B0604 /* NameInputTableViewCell.swift */; };
 		D8CD17561F06A9C900E6D1B5 /* BloodBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD17551F06A9C900E6D1B5 /* BloodBookViewController.swift */; };
 		D8CD17591F06A9FC00E6D1B5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD17581F06A9FC00E6D1B5 /* SettingsViewController.swift */; };
 		D8CD175C1F06AC3700E6D1B5 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD175B1F06AC3700E6D1B5 /* SettingsTableViewCell.swift */; };
 		D8CD175E1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD175D1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift */; };
 		D8E0317A1F07F76F00B66DDF /* DeviceContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E031791F07F76F00B66DDF /* DeviceContacts.swift */; };
 		D8E73B321F0959AE00727E01 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E73B311F0959AE00727E01 /* AddContactViewController.swift */; };
+		D8EE51711F12969F0011B49E /* ShowBloodGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE51701F12969F0011B49E /* ShowBloodGroupTableViewCell.swift */; };
+		D8EE51731F1296F40011B49E /* ShowNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE51721F1296F40011B49E /* ShowNameTableViewCell.swift */; };
+		D8EE51751F1297240011B49E /* ShowPhoneNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE51741F1297240011B49E /* ShowPhoneNumberTableViewCell.swift */; };
+		D8EE51791F129A210011B49E /* ContactsDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE51781F129A210011B49E /* ContactsDetailTableViewController.swift */; };
 		D8F19D0F1F0AA0A50044A22C /* FormInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F19D0E1F0AA0A50044A22C /* FormInputTableViewCell.swift */; };
 		D8F19D111F0ACC7F0044A22C /* AddBloodGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F19D101F0ACC7F0044A22C /* AddBloodGroupTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D8B071B91F1911070041521F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		115EB615AB66681B213DB322 /* Pods-BloodBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloodBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BloodBook/Pods-BloodBook.debug.xcconfig"; sourceTree = "<group>"; };
+		41612174365D6DA480A4563B /* Pods_BloodBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BloodBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8418B93DE0A063014D079A75 /* Pods-BloodBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloodBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-BloodBook/Pods-BloodBook.release.xcconfig"; sourceTree = "<group>"; };
 		D806196C1F0578BA00943C7B /* BloodBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloodBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D806196F1F0578BA00943C7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D80619741F0578BA00943C7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -34,12 +56,17 @@
 		D806197E1F0578BA00943C7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D80619841F057E7400943C7B /* ContactsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
 		D80619861F057ED200943C7B /* ContactListCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListCellTableViewCell.swift; sourceTree = "<group>"; };
+		D843F81B1F10C520004B0604 /* NameInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameInputTableViewCell.swift; sourceTree = "<group>"; };
 		D8CD17551F06A9C900E6D1B5 /* BloodBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodBookViewController.swift; sourceTree = "<group>"; };
 		D8CD17581F06A9FC00E6D1B5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D8CD175B1F06AC3700E6D1B5 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		D8CD175D1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodBookTableViewCell.swift; sourceTree = "<group>"; };
 		D8E031791F07F76F00B66DDF /* DeviceContacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceContacts.swift; sourceTree = "<group>"; };
 		D8E73B311F0959AE00727E01 /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		D8EE51701F12969F0011B49E /* ShowBloodGroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowBloodGroupTableViewCell.swift; sourceTree = "<group>"; };
+		D8EE51721F1296F40011B49E /* ShowNameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowNameTableViewCell.swift; sourceTree = "<group>"; };
+		D8EE51741F1297240011B49E /* ShowPhoneNumberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPhoneNumberTableViewCell.swift; sourceTree = "<group>"; };
+		D8EE51781F129A210011B49E /* ContactsDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsDetailTableViewController.swift; sourceTree = "<group>"; };
 		D8F19D0E1F0AA0A50044A22C /* FormInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormInputTableViewCell.swift; sourceTree = "<group>"; };
 		D8F19D101F0ACC7F0044A22C /* AddBloodGroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBloodGroupTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,17 +76,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D78E75CA6D1F5B85A5140CD /* Pods_BloodBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		067D7D17B842CC6A3C1DFA45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41612174365D6DA480A4563B /* Pods_BloodBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		505BAA36DCBDDE5D43836A18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				115EB615AB66681B213DB322 /* Pods-BloodBook.debug.xcconfig */,
+				8418B93DE0A063014D079A75 /* Pods-BloodBook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D80619631F0578BA00943C7B = {
 			isa = PBXGroup;
 			children = (
 				D806196E1F0578BA00943C7B /* BloodBook */,
 				D806196D1F0578BA00943C7B /* Products */,
+				505BAA36DCBDDE5D43836A18 /* Pods */,
+				067D7D17B842CC6A3C1DFA45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +142,10 @@
 				D8CD175D1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift */,
 				D8F19D0E1F0AA0A50044A22C /* FormInputTableViewCell.swift */,
 				D8F19D101F0ACC7F0044A22C /* AddBloodGroupTableViewCell.swift */,
+				D843F81B1F10C520004B0604 /* NameInputTableViewCell.swift */,
+				D8EE51701F12969F0011B49E /* ShowBloodGroupTableViewCell.swift */,
+				D8EE51721F1296F40011B49E /* ShowNameTableViewCell.swift */,
+				D8EE51741F1297240011B49E /* ShowPhoneNumberTableViewCell.swift */,
 			);
 			name = CustomCells;
 			sourceTree = "<group>";
@@ -106,6 +157,7 @@
 				D8CD17551F06A9C900E6D1B5 /* BloodBookViewController.swift */,
 				D8CD17581F06A9FC00E6D1B5 /* SettingsViewController.swift */,
 				D8E73B311F0959AE00727E01 /* AddContactViewController.swift */,
+				D8EE51781F129A210011B49E /* ContactsDetailTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -117,9 +169,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D80619811F0578BA00943C7B /* Build configuration list for PBXNativeTarget "BloodBook" */;
 			buildPhases = (
+				91C925F0AFB30BDEA8C2927F /* [CP] Check Pods Manifest.lock */,
 				D80619681F0578BA00943C7B /* Sources */,
 				D80619691F0578BA00943C7B /* Frameworks */,
 				D806196A1F0578BA00943C7B /* Resources */,
+				13574351C8B9BF00B62A2869 /* [CP] Embed Pods Frameworks */,
+				DA708F62D378D3E080BA3E6F /* [CP] Copy Pods Resources */,
+				D8B071B91F1911070041521F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,23 +234,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13574351C8B9BF00B62A2869 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BloodBook/Pods-BloodBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91C925F0AFB30BDEA8C2927F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DA708F62D378D3E080BA3E6F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BloodBook/Pods-BloodBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D80619681F0578BA00943C7B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8EE51731F1296F40011B49E /* ShowNameTableViewCell.swift in Sources */,
 				D80619871F057ED200943C7B /* ContactListCellTableViewCell.swift in Sources */,
 				D80619851F057E7400943C7B /* ContactsListViewController.swift in Sources */,
 				D8CD17561F06A9C900E6D1B5 /* BloodBookViewController.swift in Sources */,
+				D8EE51751F1297240011B49E /* ShowPhoneNumberTableViewCell.swift in Sources */,
 				D80619701F0578BA00943C7B /* AppDelegate.swift in Sources */,
 				D8F19D111F0ACC7F0044A22C /* AddBloodGroupTableViewCell.swift in Sources */,
 				D8E0317A1F07F76F00B66DDF /* DeviceContacts.swift in Sources */,
+				D8EE51791F129A210011B49E /* ContactsDetailTableViewController.swift in Sources */,
 				D8E73B321F0959AE00727E01 /* AddContactViewController.swift in Sources */,
+				D8EE51711F12969F0011B49E /* ShowBloodGroupTableViewCell.swift in Sources */,
 				D8CD175C1F06AC3700E6D1B5 /* SettingsTableViewCell.swift in Sources */,
 				D8CD175E1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift in Sources */,
 				D8F19D0F1F0AA0A50044A22C /* FormInputTableViewCell.swift in Sources */,
 				D80619781F0578BA00943C7B /* BloodBook.xcdatamodeld in Sources */,
 				D8CD17591F06A9FC00E6D1B5 /* SettingsViewController.swift in Sources */,
+				D843F81C1F10C520004B0604 /* NameInputTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +424,7 @@
 		};
 		D80619821F0578BA00943C7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 115EB615AB66681B213DB322 /* Pods-BloodBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C2ULP5XCLB;
@@ -329,6 +439,7 @@
 		};
 		D80619831F0578BA00943C7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8418B93DE0A063014D079A75 /* Pods-BloodBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C2ULP5XCLB;

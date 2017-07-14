@@ -8,7 +8,7 @@
 
 import UIKit
 import Contacts
-
+import CocoaLumberjack
 class ContactsListViewController: UIViewController {
     @IBOutlet var contactsNavBar: UINavigationBar!
     @IBOutlet weak var tableView: UITableView!
@@ -17,6 +17,7 @@ class ContactsListViewController: UIViewController {
     var contacts:[CNContact] = [CNContact]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        DDLogInfo("ContactsListViewController viewDidLoad")
         activityIndicator()
         contacts = DeviceContacts.shared.contacts
     }
@@ -72,5 +73,10 @@ extension ContactsListViewController: UITableViewDelegate, UITableViewDataSource
         let contactName:String? = ("\(contacts[indexPath.row].givenName) \(contacts[indexPath.row].familyName)")
         cell.ContactName?.text = contactName
         return cell;
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "contactsDetailViewController")
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

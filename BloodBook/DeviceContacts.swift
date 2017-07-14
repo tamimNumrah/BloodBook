@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CocoaLumberjack
 import Contacts
 final class DeviceContacts{
     
@@ -16,7 +17,7 @@ final class DeviceContacts{
     static let shared = DeviceContacts()
     
     private init(){
-        print("DeviceContacts Initialized")
+        DDLogInfo("DeviceContacts Initialized")
     }
     
     func loadContacts() -> Void{

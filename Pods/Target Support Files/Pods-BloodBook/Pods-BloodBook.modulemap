@@ -1,0 +1,6 @@
+framework module Pods_BloodBook {
+  umbrella header "Pods-BloodBook-umbrella.h"
+
+  export *
+  module * { export * }
+}
