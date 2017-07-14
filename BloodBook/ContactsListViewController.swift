@@ -72,7 +72,7 @@ extension ContactsListViewController: UITableViewDelegate, UITableViewDataSource
         }
         let contactName:String? = ("\(contacts[indexPath.row].givenName) \(contacts[indexPath.row].familyName)")
         cell.ContactName?.text = contactName
-        return cell;
+        return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

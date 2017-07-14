@@ -23,7 +23,7 @@ final class DeviceContacts{
     func loadContacts() -> Void{
         AppDelegate.getAppDelegate().requestForContactAccess(completionHandler: {
             accessGranted in
-            self.isContactsFetching = true;
+            self.isContactsFetching = true
             self.contacts = [CNContact]()
             if(accessGranted){
                 let keys:[CNKeyDescriptor] = [CNContactFormatter.descriptorForRequiredKeys(for: .fullName), CNContactPhoneNumbersKey as CNKeyDescriptor, CNContactImageDataAvailableKey as CNKeyDescriptor]

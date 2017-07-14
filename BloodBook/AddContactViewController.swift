@@ -32,7 +32,7 @@ class AddContactViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        imagePicker.delegate = self;
+        imagePicker.delegate = self
         registerForKeyboardNotifications()
     }
 
@@ -78,15 +78,15 @@ extension AddContactViewController: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         /*
          // Determine the row number of the active UITextField in which "return" was just pressed.
-         id cellContainingFirstResponder = textField.superview.superview ;
-         NSInteger rowOfCellContainingFirstResponder = [self.tableView indexPathForCell:cellContainingFirstResponder].row ;
+         id cellContainingFirstResponder = textField.superview.superview
+         NSInteger rowOfCellContainingFirstResponder = [self.tableView indexPathForCell:cellContainingFirstResponder].row
          // Get a reference to the next cell.
-         NSIndexPath* indexPathOfNextCell = [NSIndexPath indexPathForRow:rowOfCellContainingFirstResponder+1 inSection:0] ;
-         TableViewCell* nextCell = (TableViewCell*)[self.tableView cellForRowAtIndexPath:indexPathOfNextCell] ;
+         NSIndexPath* indexPathOfNextCell = [NSIndexPath indexPathForRow:rowOfCellContainingFirstResponder+1 inSection:0]
+         TableViewCell* nextCell = (TableViewCell*)[self.tableView cellForRowAtIndexPath:indexPathOfNextCell]
          if ( nextCell )
-         [nextCell.theTextField becomeFirstResponder] ;
+         [nextCell.theTextField becomeFirstResponder]
          else
-         [textField resignFirstResponder] ;
+         [textField resignFirstResponder]
          */
         return true
     }
@@ -98,7 +98,7 @@ extension AddContactViewController: UITextFieldDelegate{
     func keyboardWillShow(notification: Notification){
         if let userInfo = notification.userInfo {
             let keyboardSize: CGSize = (userInfo[UIKeyboardFrameEndUserInfoKey] as AnyObject).cgRectValue.size
-            let contentInset = UIEdgeInsetsMake(0.0, 0.0, keyboardSize.height, 0.0);
+            let contentInset = UIEdgeInsetsMake(0.0, 0.0, keyboardSize.height, 0.0)
             self.AddContactTableView.contentInset = contentInset
             self.AddContactTableView.scrollIndicatorInsets = contentInset
         }
@@ -182,7 +182,7 @@ extension AddContactViewController: UITableViewDelegate, UITableViewDataSource{
             addBloodGroupSection = indexPath.section
             cell.addBloodGroupTextField.textColor = UIColor.red
             if let select = selectedGroup{
-                cell.addBloodGroupTextField.text = select;
+                cell.addBloodGroupTextField.text = select
             }
             
             //Create Picker View

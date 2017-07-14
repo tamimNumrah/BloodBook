@@ -70,7 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         alertController.addAction(dismissAction)
         DispatchQueue.main.async(execute: {
             self.window?.rootViewController?.present(alertController, animated: true, completion: nil)
-        });
+        })
         
     }
     // MARK: - Contacts

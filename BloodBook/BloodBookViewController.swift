@@ -49,7 +49,7 @@ extension BloodBookViewController: UITableViewDelegate, UITableViewDataSource{
         cell.firstName?.text = "Tamim"
         cell.lastName?.text = "Ibn Aman"
         cell.PhoneNumber?.text = "+8801829260190"
-        return cell;
+        return cell
     }
 }
 

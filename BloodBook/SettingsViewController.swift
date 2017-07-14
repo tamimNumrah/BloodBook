@@ -9,7 +9,6 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-    @IBOutlet var settingsNavBar: UINavigationBar!
     @IBOutlet var settingsTableView: UITableView!
     let settingsCellReuseIdentifier = "SettingsCell"
     override func viewDidLoad() {
@@ -36,7 +35,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource{
             cell = SettingsTableViewCell(style: .default, reuseIdentifier: settingsCellReuseIdentifier)
         }
         //cell.ContactName?.text = "This is Test"
-        return cell;
+        return cell
     }
 }
 
