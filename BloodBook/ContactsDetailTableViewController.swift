@@ -7,18 +7,35 @@
 //
 
 import UIKit
+import CocoaLumberjack
+import Contacts
+
+
 
 class ContactsDetailTableViewController: UITableViewController {
     let nameCellReuseIdentifier = "showNameCell"
     let bloodGroupCellReuseIdentifier = "showBloodGroupCell"
     let phoneNumberCellReuseIdentifier = "showPhoneNumberCell"
-    
+    var viewedContact: CNContact?
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let contact = viewedContact{
+            self.title = contact.givenName + " " + contact.familyName
+            DDLogInfo("Contact Loaded in ContactDetailViewController")
+        }else{
+            self.title = "New"
+        }
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "Edit", style: .plain, target: self, action: #selector(editButtonPressed))
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func editButtonPressed(){
+        DDLogInfo("editButtonPressed in ContactsDetailViewController")
     }
 }
 
@@ -54,6 +71,11 @@ extension ContactsDetailTableViewController{
                 cell = reuseCell
             }else{
                 cell = ShowNameTableViewCell(style: .default, reuseIdentifier: nameCellReuseIdentifier)
+            }
+            cell.firstNameLabel.text = viewedContact?.givenName
+            cell.lastNameLabel.text = viewedContact?.familyName
+            if let data = viewedContact?.imageData {
+                cell.contactImage.image = UIImage(data: data)
             }
             return cell
         }else{

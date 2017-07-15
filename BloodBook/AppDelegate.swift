@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         DDLog.add(DDTTYLogger.sharedInstance) // TTY = Xcode console
         DDLog.add(DDASLLogger.sharedInstance) // ASL = Apple System Logs
         DDLogInfo("DDLog Setup Done")
-        self.window?.tintColor = UIColor.red
+        updateAppAppearance()
         initializeSingletons()
         
         // Override point for customization after application launch.
@@ -55,7 +55,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     class func getAppDelegate() -> AppDelegate {
         return UIApplication.shared.delegate as! AppDelegate
     }
-    
+    func updateAppAppearance(){
+        self.window?.tintColor = UIColor.red
+        //let navBar = UINavigationBar.appearance()
+        //navBar.tintColor = UIColor.redColor()
+    }
     func initializeSingletons() -> Void{
         DeviceContacts.shared.loadContacts()
     }
