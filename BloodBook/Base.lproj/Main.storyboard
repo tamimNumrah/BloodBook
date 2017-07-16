@@ -188,9 +188,14 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XKm-fA-vfX">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search" id="FK8-ar-y1Z">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactListCell" rowHeight="45" id="sK4-4O-waV" customClass="ContactListCellTableViewCell" customModule="BloodBook" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="72" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sK4-4O-waV" id="tom-VO-pVI">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
@@ -237,6 +242,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="contactSearchBar" destination="FK8-ar-y1Z" id="gsH-pF-Xkl"/>
                         <outlet property="tableView" destination="XKm-fA-vfX" id="sVV-1s-QqT"/>
                     </connections>
                 </viewController>
@@ -441,7 +447,7 @@
         <scene sceneID="Wmv-CA-n2H">
             <objects>
                 <tableViewController storyboardIdentifier="contactsDetailViewController" modalPresentationStyle="currentContext" id="uOG-Rl-nVh" customClass="ContactsDetailTableViewController" customModule="BloodBook" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="qnW-dG-fXe">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="qnW-dG-fXe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -450,7 +456,7 @@
                                 <rect key="frame" x="0.0" y="56" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oUI-M6-eIW" id="hds-KO-GtF">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kx5-yV-1V9">
@@ -504,7 +510,7 @@
                                 <rect key="frame" x="0.0" y="176" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C37-Wy-IFW" id="sqp-8p-KQr">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atI-k7-stv">
@@ -530,7 +536,7 @@
                                 <rect key="frame" x="0.0" y="276" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7xK-O6-0nr" id="OiV-9M-5bp">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6h3-vR-Ics">

@@ -10,8 +10,8 @@ import UIKit
 import Contacts
 import CocoaLumberjack
 class ContactsListViewController: UIViewController {
-    @IBOutlet var contactsNavBar: UINavigationBar!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var contactSearchBar: UISearchBar!
     var indicator = UIActivityIndicatorView()
     let contactListCellReuseIdentifier = "ContactListCell"
     var contacts:[CNContact] = [CNContact]()

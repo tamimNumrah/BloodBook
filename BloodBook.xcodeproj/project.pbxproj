@@ -16,6 +16,14 @@
 		D806197D1F0578BA00943C7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D806197B1F0578BA00943C7B /* LaunchScreen.storyboard */; };
 		D80619851F057E7400943C7B /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80619841F057E7400943C7B /* ContactsListViewController.swift */; };
 		D80619871F057ED200943C7B /* ContactListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80619861F057ED200943C7B /* ContactListCellTableViewCell.swift */; };
+		D808DBD61F1BE23B00FEEF85 /* ContactsInformation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808DBD21F1BE23B00FEEF85 /* ContactsInformation+CoreDataClass.swift */; };
+		D808DBD71F1BE23B00FEEF85 /* ContactsInformation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808DBD21F1BE23B00FEEF85 /* ContactsInformation+CoreDataClass.swift */; };
+		D808DBD81F1BE23B00FEEF85 /* ContactsInformation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808DBD31F1BE23B00FEEF85 /* ContactsInformation+CoreDataProperties.swift */; };
+		D808DBD91F1BE23B00FEEF85 /* ContactsInformation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808DBD31F1BE23B00FEEF85 /* ContactsInformation+CoreDataProperties.swift */; };
+		D808DBDA1F1BE23B00FEEF85 /* PhoneNumbers+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808DBD41F1BE23B00FEEF85 /* PhoneNumbers+CoreDataClass.swift */; };
+		D808DBDB1F1BE23B00FEEF85 /* PhoneNumbers+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808DBD41F1BE23B00FEEF85 /* PhoneNumbers+CoreDataClass.swift */; };
+		D808DBDC1F1BE23B00FEEF85 /* PhoneNumbers+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808DBD51F1BE23B00FEEF85 /* PhoneNumbers+CoreDataProperties.swift */; };
+		D808DBDD1F1BE23B00FEEF85 /* PhoneNumbers+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808DBD51F1BE23B00FEEF85 /* PhoneNumbers+CoreDataProperties.swift */; };
 		D843F81C1F10C520004B0604 /* NameInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D843F81B1F10C520004B0604 /* NameInputTableViewCell.swift */; };
 		D88E24721F1948BF00E581D1 /* BloodBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88E24711F1948BF00E581D1 /* BloodBookTests.swift */; };
 		D88E24791F1949B900E581D1 /* DeviceContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E031791F07F76F00B66DDF /* DeviceContacts.swift */; };
@@ -86,6 +94,10 @@
 		D806197E1F0578BA00943C7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D80619841F057E7400943C7B /* ContactsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
 		D80619861F057ED200943C7B /* ContactListCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListCellTableViewCell.swift; sourceTree = "<group>"; };
+		D808DBD21F1BE23B00FEEF85 /* ContactsInformation+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContactsInformation+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D808DBD31F1BE23B00FEEF85 /* ContactsInformation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContactsInformation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D808DBD41F1BE23B00FEEF85 /* PhoneNumbers+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhoneNumbers+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D808DBD51F1BE23B00FEEF85 /* PhoneNumbers+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhoneNumbers+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D843F81B1F10C520004B0604 /* NameInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameInputTableViewCell.swift; sourceTree = "<group>"; };
 		D88E246F1F1948BF00E581D1 /* BloodBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloodBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88E24711F1948BF00E581D1 /* BloodBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodBookTests.swift; sourceTree = "<group>"; };
@@ -172,6 +184,7 @@
 				D8E031791F07F76F00B66DDF /* DeviceContacts.swift */,
 				D8CD175A1F06AA0300E6D1B5 /* ViewControllers */,
 				D8CD17571F06A9D100E6D1B5 /* CustomCells */,
+				D808DBDE1F1BE26200FEEF85 /* ManagedObjectsClasses */,
 				D80619731F0578BA00943C7B /* Main.storyboard */,
 				D80619791F0578BA00943C7B /* Assets.xcassets */,
 				D806197B1F0578BA00943C7B /* LaunchScreen.storyboard */,
@@ -179,6 +192,17 @@
 				D80619761F0578BA00943C7B /* BloodBook.xcdatamodeld */,
 			);
 			path = BloodBook;
+			sourceTree = "<group>";
+		};
+		D808DBDE1F1BE26200FEEF85 /* ManagedObjectsClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D808DBD21F1BE23B00FEEF85 /* ContactsInformation+CoreDataClass.swift */,
+				D808DBD31F1BE23B00FEEF85 /* ContactsInformation+CoreDataProperties.swift */,
+				D808DBD41F1BE23B00FEEF85 /* PhoneNumbers+CoreDataClass.swift */,
+				D808DBD51F1BE23B00FEEF85 /* PhoneNumbers+CoreDataProperties.swift */,
+			);
+			name = ManagedObjectsClasses;
 			sourceTree = "<group>";
 		};
 		D88E24701F1948BF00E581D1 /* BloodBookTests */ = {
@@ -427,7 +451,9 @@
 				D80619871F057ED200943C7B /* ContactListCellTableViewCell.swift in Sources */,
 				D80619851F057E7400943C7B /* ContactsListViewController.swift in Sources */,
 				D8CD17561F06A9C900E6D1B5 /* BloodBookViewController.swift in Sources */,
+				D808DBD81F1BE23B00FEEF85 /* ContactsInformation+CoreDataProperties.swift in Sources */,
 				D8EE51751F1297240011B49E /* ShowPhoneNumberTableViewCell.swift in Sources */,
+				D808DBDA1F1BE23B00FEEF85 /* PhoneNumbers+CoreDataClass.swift in Sources */,
 				D80619701F0578BA00943C7B /* AppDelegate.swift in Sources */,
 				D8F19D111F0ACC7F0044A22C /* AddBloodGroupTableViewCell.swift in Sources */,
 				D8E0317A1F07F76F00B66DDF /* DeviceContacts.swift in Sources */,
@@ -435,11 +461,13 @@
 				D8E73B321F0959AE00727E01 /* AddContactViewController.swift in Sources */,
 				D8EE51711F12969F0011B49E /* ShowBloodGroupTableViewCell.swift in Sources */,
 				D8CD175C1F06AC3700E6D1B5 /* SettingsTableViewCell.swift in Sources */,
+				D808DBDC1F1BE23B00FEEF85 /* PhoneNumbers+CoreDataProperties.swift in Sources */,
 				D8CD175E1F06AC4A00E6D1B5 /* BloodBookTableViewCell.swift in Sources */,
 				D8F19D0F1F0AA0A50044A22C /* FormInputTableViewCell.swift in Sources */,
 				D80619781F0578BA00943C7B /* BloodBook.xcdatamodeld in Sources */,
 				D8CD17591F06A9FC00E6D1B5 /* SettingsViewController.swift in Sources */,
 				D843F81C1F10C520004B0604 /* NameInputTableViewCell.swift in Sources */,
+				D808DBD61F1BE23B00FEEF85 /* ContactsInformation+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +479,9 @@
 				D88E24841F1949E500E581D1 /* AddBloodGroupTableViewCell.swift in Sources */,
 				D88E247C1F1949C600E581D1 /* BloodBookViewController.swift in Sources */,
 				D88E24851F1949E700E581D1 /* FormInputTableViewCell.swift in Sources */,
+				D808DBD91F1BE23B00FEEF85 /* ContactsInformation+CoreDataProperties.swift in Sources */,
 				D88E24821F1949E000E581D1 /* ShowBloodGroupTableViewCell.swift in Sources */,
+				D808DBDB1F1BE23B00FEEF85 /* PhoneNumbers+CoreDataClass.swift in Sources */,
 				D88E247B1F1949BE00E581D1 /* ContactsListViewController.swift in Sources */,
 				D88E24861F1949E900E581D1 /* BloodBookTableViewCell.swift in Sources */,
 				D88E24721F1948BF00E581D1 /* BloodBookTests.swift in Sources */,
@@ -459,11 +489,13 @@
 				D88E24871F1949EB00E581D1 /* SettingsTableViewCell.swift in Sources */,
 				D88E24801F1949DC00E581D1 /* ShowPhoneNumberTableViewCell.swift in Sources */,
 				D88E247F1F1949CD00E581D1 /* AddContactViewController.swift in Sources */,
+				D808DBDD1F1BE23B00FEEF85 /* PhoneNumbers+CoreDataProperties.swift in Sources */,
 				D88E247E1F1949CA00E581D1 /* ContactsDetailTableViewController.swift in Sources */,
 				D88E24881F1949ED00E581D1 /* ContactListCellTableViewCell.swift in Sources */,
 				D88E247D1F1949C800E581D1 /* SettingsViewController.swift in Sources */,
 				D88E24891F194D0600E581D1 /* AppDelegate.swift in Sources */,
 				D88E24831F1949E200E581D1 /* NameInputTableViewCell.swift in Sources */,
+				D808DBD71F1BE23B00FEEF85 /* ContactsInformation+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,6 +710,7 @@
 				D88E24771F1948BF00E581D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

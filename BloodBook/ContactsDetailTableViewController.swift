@@ -45,6 +45,12 @@ extension ContactsDetailTableViewController{
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 2{
+            if let count = viewedContact?.phoneNumbers.count{
+                return count
+            }
+            return 1
+        }
         return 1
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -85,6 +91,14 @@ extension ContactsDetailTableViewController{
             }else{
                 cell = ShowPhoneNumberTableViewCell(style: .default, reuseIdentifier: phoneNumberCellReuseIdentifier)
             }
+            let phoneNumbers = viewedContact?.phoneNumbers
+            let phoneNumber = phoneNumbers?[indexPath.row]
+            if let phone =  phoneNumber{
+                let number = phone.value
+                cell.phoneNumberLabel.text = number.stringValue
+            }
+            
+            
             return cell
         }
     }

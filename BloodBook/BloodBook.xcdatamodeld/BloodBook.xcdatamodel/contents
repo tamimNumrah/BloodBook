@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ContactsInformation" representedClassName="ContactsInformation" syncable="YES">
+        <attribute name="blood_group" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="first_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="from_remote" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="image_data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="last_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sent_to_remote" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="phone_numbers_list" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PhoneNumbers" inverseName="parent_contact" inverseEntity="PhoneNumbers" syncable="YES"/>
+    </entity>
+    <entity name="PhoneNumbers" representedClassName="PhoneNumbers" syncable="YES">
+        <attribute name="phone_number" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="parent_contact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ContactsInformation" inverseName="phone_numbers_list" inverseEntity="ContactsInformation" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ContactsInformation" positionX="-63" positionY="-18" width="128" height="150"/>
+        <element name="PhoneNumbers" positionX="-54" positionY="36" width="128" height="75"/>
+    </elements>
 </model>
