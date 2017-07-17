@@ -1,0 +1,6 @@
+framework module Pods_BloodBookTests {
+  umbrella header "Pods-BloodBookTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
